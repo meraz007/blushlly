@@ -1,7 +1,6 @@
 import './App.css'
 import Navbar from '../src/components/Navbar'
 import Subscribe from './components/Subscribe'
-import { useState } from 'react'
 import adOne from '../src/assets/img/AdOne.png'
 import adTwo from '../src/assets/img/AdTwo.png'
 import Testimonial from './components/Testimonial'
@@ -20,7 +19,9 @@ function App() {
       <div className=''>
         <div className='max-w-6xl mx-auto container'>
           <Navbar />
-          {/* <SliderSection /> */}
+        </div>
+        <SliderSection />
+        <div className='max-w-6xl mx-auto container'>
           <Categories />
           <LatestPost />
           <img className='mt-40 w-full' src={adOne} alt="" />

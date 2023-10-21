@@ -63,7 +63,7 @@ const RandomPost = () => {
         <SectionTitle title={'Random Post'} />
         {posts.map((post,index) => (
             <>
-            <div key={index} className={`flex relative ${index % 2 == 0 ? 'justify-start' : 'justify-end'}`}>
+            <div key={index} className={`mt-8 flex relative ${index % 2 == 0 ? 'justify-start' : 'justify-end'}`}>
                 <div>
                     <img src={post.img} alt="" className='w-[596px] h-[476px]' />
                 </div>
@@ -75,9 +75,13 @@ const RandomPost = () => {
                     <p className='mt-4 font-medium text-xs text-[#838383]'><span>{post.author}</span>- <span>{post.date}</span></p>
                 </div>
             </div>
-        <div className='border-dashed border-t border-[#1D1A1A] my-8'></div>
+
+            <div className='border-dashed border-t border-[#1D1A1A] my-8'></div>
             </>
         ))}
+        <div className='flex justify-center items-center py-8'>
+            <button className='rounded-[28px] bg-[#1D1A1A] py-4 px-12 font-medium text-base text-white'>Load More</button>
+        </div>
         </>
     )
 }

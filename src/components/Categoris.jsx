@@ -29,7 +29,7 @@ const Categories = () => {
     ]
     return(
         <>
-        <div className='flex flex-wrap -m-4'>
+        <div className='flex flex-wrap -m-4 py-8'>
             {images.map((img,index) => (
                 <div key={index} className='w-full md:w-1/5 p-4'>
                     <div class="relative h-40 bg-cover bg-center" style={{ backgroundImage: `url(${img.image})` }}>
